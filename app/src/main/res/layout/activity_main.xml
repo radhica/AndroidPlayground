@@ -22,7 +22,12 @@
         <Button
             android:layout_width="@dimen/width_button_main"
             android:layout_height="wrap_content"
-            android:text="@string/notification_test" />
+            android:text="@string/notification" />
+
+        <Button
+            android:layout_width="@dimen/width_button_main"
+            android:layout_height="wrap_content"
+            android:text="@string/navigation_drawer" />
 
     </LinearLayout>
 </ScrollView>

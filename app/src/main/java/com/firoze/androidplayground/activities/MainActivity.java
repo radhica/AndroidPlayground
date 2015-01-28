@@ -1,8 +1,10 @@
 package com.firoze.androidplayground.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.firoze.androidplayground.R;
 import com.firoze.baseClasses.BaseActivity;
@@ -41,5 +43,9 @@ public class MainActivity extends BaseActivity {
     @Override
     public String getTag() {
         return "MainActivity";
+    }
+
+    public void notificationsActivity(View v) {
+        startActivity(new Intent(this, NotificationsActivity.class));
     }
 }

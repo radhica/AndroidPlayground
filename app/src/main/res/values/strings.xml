@@ -6,6 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="notification">Notifications</string>
     <string name="navigation_drawer">Navigation Drawer</string>
+    <string name="display_notification">Display Notification</string>
     <string name="title_activity_notifications">Testing Notifications</string>
 
 </resources>

@@ -22,6 +22,7 @@
         <Button
             android:layout_width="@dimen/width_button_main"
             android:layout_height="wrap_content"
+            android:onClick="notificationsActivity"
             android:text="@string/notification" />
 
         <Button

@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtLibs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="@string/hello_world" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/txtLibs">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".PickersActivity">
+
+                <TextView
+                    android:id="@+id/txtPickerOutput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_text" />
+
+                <Button
+                    android:layout_width="@dimen/width_button_main"
+                    android:layout_height="wrap_content"
+                    android:onClick="showSimpleTimePicker"
+                    android:text="@string/picker_time" />
+
+                <Button
+                    android:layout_width="@dimen/width_button_main"
+                    android:layout_height="wrap_content"
+                    android:onClick="showSimpleDatePicker"
+                    android:text="@string/picker_date" />
+
+                <Button
+                    android:layout_width="@dimen/width_button_main"
+                    android:layout_height="wrap_content"
+                    android:onClick="showCombinedDateTimePicker"
+                    android:text="@string/picker_both" />
+
+                <Button
+                    android:layout_width="@dimen/width_button_main"
+                    android:layout_height="wrap_content"
+                    android:onClick="showCustomNumberPicker"
+                    android:text="@string/picker_num" />
+
+                <Button
+                    android:layout_width="@dimen/width_button_main"
+                    android:layout_height="wrap_content"
+                    android:onClick="showCustomStringPicker"
+                    android:text="@string/picker_str" />
+
+                <Button
+                    android:layout_width="@dimen/width_button_main"
+                    android:layout_height="wrap_content"
+                    android:onClick="showCustomIntervalPicker"
+                    android:text="@string/picker_interval" />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>
+
+
+

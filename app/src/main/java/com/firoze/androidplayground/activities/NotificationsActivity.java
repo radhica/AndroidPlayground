@@ -20,7 +20,6 @@ public class NotificationsActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_notifications);
     }
 
 
@@ -49,6 +48,11 @@ public class NotificationsActivity extends BaseActivity {
     @Override
     public String getTag() {
         return "NotificationsActivity";
+    }
+
+    @Override
+    protected int getLayoutResource() {
+        return R.layout.activity_notifications;
     }
 
     public void displayNotification(View v) {

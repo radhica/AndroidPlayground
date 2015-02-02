@@ -15,7 +15,6 @@ public class MainActivity extends BaseActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
     }
 
     @Override
@@ -45,7 +44,16 @@ public class MainActivity extends BaseActivity {
         return "MainActivity";
     }
 
+    @Override
+    protected int getLayoutResource() {
+        return R.layout.activity_main;
+    }
+
     public void notificationsActivity(View v) {
         startActivity(new Intent(this, NotificationsActivity.class));
+    }
+
+    public void pickersActivity(View v) {
+        startActivity(new Intent(this, PickersActivity.class));
     }
 }

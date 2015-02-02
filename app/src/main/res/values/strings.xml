@@ -2,11 +2,19 @@
 <resources>
 
     <string name="app_name">Android Playground</string>
+    <string name="no_text">---</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="notification">Notifications</string>
-    <string name="navigation_drawer">Navigation Drawer</string>
+    <string name="pickers">Pickers</string>
     <string name="display_notification">Display Notification</string>
     <string name="title_activity_notifications">Testing Notifications</string>
+    <string name="title_activity_pickers">Pickers</string>
+    <string name="picker_time">Simple Time Picker</string>
+    <string name="picker_date">Simple Date Picker</string>
+    <string name="picker_both">Combined Date/Time</string>
+    <string name="picker_num">Custom Number Picker</string>
+    <string name="picker_str">Custom String Picker</string>
+    <string name="picker_interval">Custom Interval Picker</string>
 
 </resources>
